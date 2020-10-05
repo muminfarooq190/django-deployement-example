@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User Info</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  </head>
+  <body>
+    {% if user %}
+        {% for person in user%}
+
+
+      <ul class="list-group">
+    <li class="list-group-item">User Info</li>
+
+
+    <li class="list-group-item list-group-item-primary">FIRST NAME >>{{ person.first_name }}</li>
+    <li class="list-group-item list-group-item-secondary">LAST NAME >>{{ person.last_name }}</li>
+    <li class="list-group-item list-group-item-success">EMAIL>>{{ person.email }}</li>
+  </ul>
+      {% endfor %}
+
+    {% endif %}
+
+
+  </body>
+</html>
