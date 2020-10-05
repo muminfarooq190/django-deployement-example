@@ -17,7 +17,7 @@ SECRET_KEY = 'i32h2$6=x9gf+w*bd+76d-lqrbhnh+mt4k884j!zyt2b_ga+t+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['muminfarooq190.pythonanywhere.com']
 
 
 # Application definition
